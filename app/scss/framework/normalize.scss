@@ -9,7 +9,6 @@
  */
 
  html {
-    line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
   }
   
@@ -22,12 +21,11 @@
 
    * {
      box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     line-height: normal;
    }
   
-  body {
-    margin: 0;
-    
-  }
   
   /**
    * Render the `main` element consistently in IE.
@@ -79,8 +77,19 @@
    */
   
   a {
+    color: #fff;
     background-color: transparent;
     text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  button {
+    color: #fff;
+    border: none;
+    background-color: transparent;
   }
   
   /**
@@ -103,6 +112,11 @@
     font-weight: bolder;
   }
   
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
   /**
    * 1. Correct the inheritance and scaling of font size in all browsers.
    * 2. Correct the odd `em` font sizing in all browsers.
