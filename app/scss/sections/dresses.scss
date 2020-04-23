@@ -1,0 +1,64 @@
+.dresses {
+    @include paddingSectionsNarrow;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(16, 16, 16, 0.85), rgba(16, 16, 16, 0.85)), url('../../../assets/backgrounds/dresses-background.png');
+    background-position: center center;
+}
+
+.slider {
+    height: 100vh;
+    position: relative;
+
+
+    .slider__items-list {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item {
+        position: relative;
+    }
+        
+
+    .item-img img {
+        border-radius: 50%;
+    }
+    
+    .item-title {
+        display: block;
+        text-align: center;
+        font-family: 'Antic Didone', serif;
+        font-size: 3.541vmax;
+        font-weight: normal;
+        transform: translateY(-6.8vmax);
+    }
+
+    .item-collection {
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        font-size: 1.145vmax;
+        font-weight: 300;
+        position: absolute;
+        right: -3vmax;
+        bottom: 4vmax;
+
+        &::before {
+            content: '-';
+            display: inline-block;
+            margin-right: 0.145vmax;
+            color: inherit;
+            font-size: inherit;
+        }
+    }
+
+    .slider__controllers {
+        position: absolute;
+        bottom: 10vh;
+        display: flex;
+        
+        .left,
+        .right {
+            margin: 0 11px;
+        }
+    }
+}
