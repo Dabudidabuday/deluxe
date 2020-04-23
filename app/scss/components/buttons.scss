@@ -13,3 +13,17 @@
     border-radius: 0.208vmax;
 }
 
+
+.filter-button {
+    padding: 0 0.729vmax;
+    font-size: 1.145vmax;
+    line-height: 1.354vmax;
+    font-weight: 500;
+    color: #7E8082;
+    transform: translateY(1px);
+
+    &.active {
+        color: #fff;
+        border-bottom: 2px solid #F63939;
+    }
+}

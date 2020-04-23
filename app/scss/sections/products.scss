@@ -1,0 +1,66 @@
+.products__title {
+    margin-bottom: 1.458vmax;
+    font-size: 2.187vmax;
+    line-height: 2.552vmax;
+}
+
+.products__subtitle {
+    margin-bottom: 0.833vmax;
+    font-size: 1.145vmax;
+    line-height: 1.354vmax;
+    font-weight: 500;
+}
+
+.products__description-text {
+    margin-bottom: 2.812vmax;
+    max-width: 49.531vmax;
+    width: 100%;
+    font-size: 1.145vmax;
+    line-height: 1.354vmax;
+    font-weight: normal;
+}
+
+
+.products__filter {
+    margin-bottom: 2.995vmax;
+    border-bottom: 1px solid #434141;
+}
+
+
+
+
+.card {
+    margin-bottom: 1.718vmax;
+    max-width: 19.895vw;
+    width: 100%;
+
+    .card-img  {
+         margin-bottom: 1.041vmax;
+        img {
+            width: 19.895vw;
+        }
+        
+    }
+
+    .card__info-top {
+        margin-bottom: 0.967vmax;
+        width: inherit;
+        font-size: 1.145vmax;
+        line-height: 1.354vmax;
+        font-weight: bold;
+    }
+
+    .card__info-bottom {
+        margin-bottom: 1.145vmax;
+        color: #7E8082;
+        font-weight: normal;
+
+        .card-width {
+            margin-right: 1.145vmax;
+        }
+    }
+}
+
+.card:not(:nth-child(4)) {
+    margin-right: 1.718vmax;
+}
