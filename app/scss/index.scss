@@ -15,6 +15,9 @@
 @import 'sections/header.scss';
 
 @import 'sections/intro.scss';
+@import 'sections/team.scss';
+@import 'sections/products.scss';
+
 @import 'sections/footer.scss';
 
 
@@ -26,27 +29,3 @@ body {
     background: linear-gradient(0deg, rgba(16, 16, 16, 0.87), rgba(16, 16, 16, 0.87)), url('../../assets/backgrounds/background-pattern.svg');
 }
 
-.main-header {
-    position: absolute;
-    top: 0;
-    padding-top: 0.416vh;
-    padding-bottom: 0.416vh;
-    width: 100vw;
-    height: 3.54vmax;
-    background-color: rgba(22, 23, 26, 0.46);
-}
-
-.header__logo svg {
-    width: 9.810vmax;
-    height: 2.83vmax;
-}
-
-.header-btn {
-    margin-left: 1.77vw;
-}
-
-.header__navigation-list {
-    .item {
-        margin-left: 2.18vmax;
-    }
-}

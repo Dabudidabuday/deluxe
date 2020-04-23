@@ -1,5 +1,6 @@
 
 .intro {
+    position: relative;
     padding-top: 13.020vh;
     padding-bottom: 5.006vh;
     height: 100vh;
@@ -20,18 +21,24 @@
 }
 
 .intro__btn {
-    margin-bottom: 5.052vh;
+    margin-bottom: 5.052vmax;
 }
 
 .intro__description-text {
-    max-width: 41.093vw;
-    font-size: 1.145vmax;
-    line-height: 1.66vmax;
+    max-width: 31.770vw;
+    font-size: 0.833vmax;
+    line-height: 1.179vmax;
     font-weight: normal;
 }
 
 .scroll {
     position: absolute;
     width: 5.677vw;
-    bottom: 5vmin;
+    bottom: 3.802vmin;
+    left: calc(50% - 2.838vw);
+
+    & .scroll-img {
+        margin-top: 0.773vh;
+        text-align: center;
+    }
 }

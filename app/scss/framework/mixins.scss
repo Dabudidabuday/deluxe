@@ -1,6 +1,9 @@
+@mixin paddingSectionsNarrow {
+    padding-top: 5.729vh;
+    padding-bottom: 5.729vh;
+}
 
-// @mixin paddingSections {
-//     padding-top: 20px;
-//     padding-right: 70px;
-//     padding-left: 70px;
-// }
+@mixin paddingCard {
+    padding-top: 4.687vh;
+    padding-bottom: 4.687vh;
+}
