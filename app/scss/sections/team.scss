@@ -1,9 +1,11 @@
 .team {
     @include paddingSectionsNarrow;
     position: relative;
-    background-image: url('../../../assets/backgrounds/team-background.png');
     height: 100vh;
     color: #000;
+    background-image: url('../../../assets/backgrounds/team-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &::before {
         content: '';
