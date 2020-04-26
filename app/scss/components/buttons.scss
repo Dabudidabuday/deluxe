@@ -13,6 +13,10 @@
     padding: 0.989vmax 1.145vmax;
 }
 
+.btn--big {
+    padding: 1.354vmax 1.770vmax;
+}
+
 .btn--transparent {
     background-color: transparent;
     border: 0.052vmax solid #4A4A4A;
@@ -21,7 +25,7 @@
 .filter-button {
     padding: 0 0.729vmax;
     font-size: 1.145vmax;
-    line-height: 1.354vmax;
+    line-height: 1.770vmax;
     font-weight: 500;
     color: #7E8082;
     transform: translateY(1px);

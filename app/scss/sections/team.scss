@@ -20,19 +20,23 @@
     margin-top: 7.447vmax;
 
     .team__title {
-        margin-bottom: 1.145vh;
+        margin-bottom: 1.770vmax;
         font-size: 2.187vmax;
         line-height: 2.552vmax;
         font-weight: bold;
     }
 
     .team__description-text {
-        margin-bottom: 1.770vh;
+        margin-bottom: 1.770vmax;
         max-width: 31.770vmax;
         width: 100%;
         font-weight: normal;
         font-size: 1.145vmax;
         line-height: 1.354vmax;
+    }
+
+    .team__btn {
+        font-size: 1.145vmax;
     }
 }
 

@@ -128,12 +128,12 @@
                         <p class="team__description-text">
                             Опытные консультанты с радостью помогут сделать необходимый и важный выбор, сориентируют в ассортименте и  метраже ткани чтобы Вы получили именно то, что необходимо. 
                         </p>
-                        <button class="btn btn--bigger">получить консультацию</button>
+                        <button class="btn btn--bigger team__btn">получить консультацию</button>
                     </div>
 
                     <div class="team__members">
                         <ul class="team__members-list flex flex__jc-between">
-                            <li class="item card">
+                            <li class="carousel-cell item card">
                                 <div class="card-img">
                                     <img src="assets/members/member-1.jpg" alt="">
                                 </div>
@@ -143,7 +143,27 @@
                                 </div>
                             </li>
 
-                            <li class="item card">
+                            <li class="carousel-cell item card">
+                                <div class="card-img">
+                                    <img src="assets/members/member-2.jpg" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <p class="card-name">Анастасия Мерзлякова</p>
+                                    <p class="card-appointment">Дизайнер</p>
+                                </div>
+                            </li>
+
+                            <li class="carousel-cell item card">
+                                <div class="card-img">
+                                    <img src="assets/members/member-1.jpg" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <p class="card-name">Елизавета Никонова</p>
+                                    <p class="card-appointment">Директор магазина</p>
+                                </div>
+                            </li>
+
+                            <li class="carousel-cell item card">
                                 <div class="card-img">
                                     <img src="assets/members/member-2.jpg" alt="">
                                 </div>
@@ -154,15 +174,15 @@
                             </li>
                         </ul>
 
-                        <div class="team__members-controller flex">
-                            <div class="left">
+                        <div class="team__members-controller flickity-prev-next-button flex">
+                            <div class="flickity-button left">
                                 <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="28" cy="28" r="27.5" stroke="#D9E3E9"/>
                                     <path d="M29 34.8652L23 27.8711L29 20.877" stroke="#7C8A8F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                             </div>
 
-                            <div class="right">
+                            <div class="flickity-button right">
                                 <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="28" cy="28" r="27.5" stroke="#D9E3E9"/>
                                     <path d="M26 34.8654L32 27.8712L26 20.877" stroke="#7C8A8F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -175,7 +195,7 @@
         </div>
     </section>
 
-    <secton class="products">
+    <section class="products">
         <div class="container--narrow">
             <h3 class="products__title">Магазин</h3>
             <p class="products__subtitle">Мы предлагаем уникальные ткани высокого качества и аксессуары. 
@@ -348,10 +368,10 @@
                     </li>
                 </ul>
 
-                <button class="btn btn--bigger btn--transparent products__more">показать больше</button>
+                <button class="btn btn--big btn--transparent products__more">показать больше</button>
             </div>
         </div>
-    </secton>
+    </section>
 
     <section class="dresses" >
         <div class="container--narrow">
@@ -500,12 +520,21 @@
                     <i>Магазин изысканных тканей Elegant Deluxe</i> 
                 </p>
 
-                <div class="footer__contacts">
-                    <span class="footer-tel">Телефоны:</span>
-                    <a href="tel:+38 (044) 338-05-03">+38 (044) 338-05-03;</a>  
-                    <a href="tel:+38 (098) 338-05-03">+38 (098) 338-05-03</a>   
+                <div class="flex">
+                    <div class="footer__contacts flex flex__wrap flex__jc-end">
+                        <span class="footer-tel">Телефоны:</span>
+                        <a href="tel:+38 (044) 338-05-03">+38 (044) 338-05-03;</a>  
+                        <a href="tel:+38 (098) 338-05-03">+38 (098) 338-05-03</a>   
+                    </div>
 
+                    <div class="footer__hours">
+                        <p class="hours-title">
+                            График работы:
+                        </p>
+                        <p class="hours-description"><span>пн-птн</span>  — 10:00-19:00 <span>сб</span> — 11:00-16:00</p>
+                    </div>
                 </div>
+                
             </div>
 
             <div class="footer-logo">
@@ -538,6 +567,12 @@
         </div>
     </footer>
 </main>
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
+    integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs="
+    crossorigin="anonymous"></script>
+
+    <script src="app/libraries/flickity/flickity.pkgd.min.js"></script>
 
     <script src="dist/main.js"></script>
 </body>

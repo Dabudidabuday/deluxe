@@ -14,7 +14,23 @@
     font-size: 1.145vmax;
 }
 
+.footer__contacts {
+    width: 17.812vmax;
+   
+   
+}
+
 .footer-logo {
     width: 19.384vmax;
     height: 5.976vmax;
+}
+
+
+.footer__hours {
+    margin-left: 2.187vmax;
+}
+.hours-description {
+    span {
+        color: $red;
+    }
 }

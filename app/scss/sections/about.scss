@@ -1,6 +1,12 @@
 .about {
-    .card-img img {
+    @include paddingSectionsNarrow;
+
+    .card-img {
         border-radius: 0.208vmax;
+
+        img {
+            border-radius: 0.208vmax;
+        }
     }
 }
 

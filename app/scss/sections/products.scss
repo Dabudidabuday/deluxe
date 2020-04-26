@@ -1,5 +1,5 @@
 .products {
-    @include paddingSectionsNarrow;
+    padding-bottom: 5.729vmax;
 }
 
 .products__title {
@@ -40,8 +40,11 @@
     height: auto;
 
     .card-img  {
+        border-radius: 0.208vmax;
+
          img {
             width: 19.895vw;
+            border-radius: 0.208vmax;
         }
         
     }
@@ -73,5 +76,5 @@
 
 .products__more {
     display: block;
-    margin: 3.563vmax auto 0;
+    margin: 1.845vmax auto 0;
 }

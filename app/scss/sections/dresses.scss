@@ -1,7 +1,7 @@
 .dresses {
     @include paddingSectionsNarrow;
     // height: 100vh;
-    background: linear-gradient(0deg, rgba(16, 16, 16, 0.85), rgba(16, 16, 16, 0.85)), url('../../../assets/backgrounds/dresses-background.png');
+    background-image:  url('../../../assets/backgrounds/dresses-background.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
