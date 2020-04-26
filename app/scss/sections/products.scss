@@ -30,8 +30,11 @@
     border-bottom: 1px solid #434141;
 }
 
-
-
+.products-list {
+    .card {
+        cursor: pointer;
+    }
+}
 
 .card {
     margin-bottom: 1.718vmax;

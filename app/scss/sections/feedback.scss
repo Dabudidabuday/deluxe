@@ -1,12 +1,10 @@
 .feedback {
     padding-top: 5.729vmax;
     padding-bottom: 5.729vmax;
-    // height: 100vh;
     background-image: url('../../../assets/backgrounds/feedback-background.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .feedback__title {
@@ -27,6 +25,7 @@
     max-width: 31.770vmax;
     width: 100%;
     height: auto;
+    
 
     .input-container {
         position: relative;
@@ -62,9 +61,6 @@
         resize: none;
     }
 
-   
-
-
     // INPUT STYLES
     .form-input {
         position: relative;
@@ -76,6 +72,7 @@
         background: rgba(255, 255, 255, 0.09);
         border: none;
         border-radius: 0.208vmax;
+        outline: none;
     }
 
     label {
@@ -85,7 +82,6 @@
         color: #969696;
     }
 
-
     .submit-form-btn {
         margin-bottom: 1.145vmax;
         color: #fff;
@@ -93,7 +89,6 @@
         border: none;
     }
 }
-
 
 .feedback__note {
     width: 31.770vmax;

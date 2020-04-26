@@ -3,6 +3,9 @@
     font-weight: 500;
     background-color: $red;
     border-radius: 0.208vmax;
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+    outline: none;
 }
 
 .btn--little {
@@ -16,6 +19,21 @@
 .btn--big {
     padding: 1.354vmax 1.770vmax;
 }
+
+.btn--little:hover,
+.btn--bigger:hover,
+.btn--big:hover {
+    background-color: #E41418;
+}
+
+.btn--little:active,
+.btn--bigger:active,
+.btn--big:active {
+    background-color: #A71C1C;
+}
+
+
+
 
 .btn--transparent {
     background-color: transparent;
