@@ -1,24 +1,17 @@
 .team {
     @include paddingSectionsNarrow;
     position: relative;
-    height: 100vh;
     color: #000;
     background-image: url('../../../assets/backgrounds/team-background.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #fff;
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 50vh;
-    }
 }
 
 .team-box {
-    @include paddingCard;
-    height: 78.958vh;
+    padding-top: 4.687vmax;
+    padding-bottom: 7.657vmax;
     background-color: #fff;
     border-radius: 0.312vmax;
 }
@@ -54,8 +47,8 @@
     height: auto;
 }
 
-.team__members-list .card {
-    margin-left: 2.916vmin;
+.team__members-list {
+    width: 42.291vmax;
 }
 
 
@@ -75,8 +68,8 @@
 
     .card-text {
         position: absolute;
-        bottom: 1.770vh;
-        left: 1.770vw;
+        bottom: 1.770vmax;
+        left: 1.770vmax;
 
         .card-name {
             margin-bottom: 0.312vh;
@@ -96,11 +89,17 @@
 
 .team__members-controller {
     position: absolute;
-    bottom: -11.50vh;
-    left: 1.3vw;
+    // bottom: -1.770vmax;
+    left: 0;
 
     .left {
         display: block;
         margin-right: 1.145vw;
+    }
+
+    .left svg,
+    .right svg {
+        width: 2.916vmax;
+        height:  2.916vmax;
     }
 }

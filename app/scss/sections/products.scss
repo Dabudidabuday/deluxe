@@ -40,8 +40,7 @@
     height: auto;
 
     .card-img  {
-         margin-bottom: 1.041vmax;
-        img {
+         img {
             width: 19.895vw;
         }
         
@@ -52,6 +51,7 @@
     }
 
     .card__info-top {
+        margin-top: 1.041vmax;
         margin-bottom: 0.967vmax;
         width: inherit;
         font-size: 1.145vmax;

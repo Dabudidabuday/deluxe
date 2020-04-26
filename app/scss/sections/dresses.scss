@@ -56,8 +56,10 @@
 
     .slider__controllers {
         position: absolute;
-        bottom: 10vh;
+        bottom: -1.041vmax;
+        left: 50%;
         display: flex;
+        transform: translate(-50%, 0);
         
         .left,
         .right {
