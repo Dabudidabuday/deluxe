@@ -89,21 +89,3 @@
     }
 }
 
-// SLIDER CONTROLLERS
-
-.team__members-controller {
-    position: absolute;
-    // bottom: -1.770vmax;
-    left: 0;
-
-    .left {
-        display: block;
-        margin-right: 1.145vw;
-    }
-
-    .left svg,
-    .right svg {
-        width: 2.916vmax;
-        height:  2.916vmax;
-    }
-}

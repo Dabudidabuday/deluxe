@@ -5,17 +5,39 @@
     height: 25.416vmax;
 }
 
-.flickity-page-dots {
-    display: none;
-}
+
 
 .flickity-viewport {
     width: 100%;
 }
 
+// SLIDER CONTROLLERS
 
-/* smaller, dark, rounded square */
-.flickity-button {
-    position: absolute;
-    background-color: transparent;
+.team__members {
+    .flickity-prev-next-button {
+        position: relative;
+    }
+
+    .flickity-button {
+        position: absolute;
+        width: 2.916vmax;
+        height:  2.916vmax;
+        transition: ease-in 0.15s;
+    }
+
+    .flickity-button:focus svg circle {
+        stroke: #E33236;
+    }
+
+    .previous {
+        left: 0;
+    }
+
+    .next {
+        left: 4.062vmax;
+    }
+
+    .flickity-button:hover svg path {
+        stroke: #E33236;
+    }
 }

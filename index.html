@@ -174,15 +174,15 @@
                             </li>
                         </ul>
 
-                        <div class="team__members-controller flickity-prev-next-button flex">
-                            <div class="flickity-button left">
-                                <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="flickity-prev-next-button flex flex__jc-between">
+                            <button class="flickity-button flickity-prev-next-button previous">
+                                <svg class="flickity-button-icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="28" cy="28" r="27.5" stroke="#D9E3E9"/>
                                     <path d="M29 34.8652L23 27.8711L29 20.877" stroke="#7C8A8F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                            </div>
+                            </button>
 
-                            <div class="flickity-button right">
+                            <div class="flickity-button next">
                                 <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="28" cy="28" r="27.5" stroke="#D9E3E9"/>
                                     <path d="M26 34.8654L32 27.8712L26 20.877" stroke="#7C8A8F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -232,7 +232,10 @@
                 <ul class="products-list flex flex__jc-between flex__wrap">
                     <li class="card">
                         <div class="card-img">
-                            <img src="assets/products/product-1.jpg" alt="">
+                            <div class="zoom-area">
+                                <div class="large"></div>
+                                <img src="assets/products/product-1.jpg" class="small" alt="">
+                            </div>
                         </div>
                         <div class="card__info-top flex flex__jc-between">
                             <p class="card-title">Название ткани</p>
@@ -445,31 +448,37 @@
     </section>
 
     <section class="about">
-        <div class="container--narrow flex">
-            <div class="about-img">
-                <div class="item card">
-                    <div class="card-img">
-                        <img src="assets/members/member-1.jpg" alt="">
-                    </div>
-                    <div class="card-text">
-                        <p class="card-name">Елизавета Никонова</p>
-                        <p class="card-appointment">Директор магазина</p>
+        <div class="container--narrow">
+            <h3 class="about__title">
+                От основателя компании
+            </h3>
+            <div class="flex">
+                <div class="about-img">
+                    <div class="item card">
+                        <div class="card-img">
+                            <img src="assets/members/member-1.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <p class="card-name">Елизавета Никонова</p>
+                            <p class="card-appointment">Директор магазина</p>
+                        </div>
                     </div>
                 </div>
+                <div class="about__description">
+                    <p class="about__description-text">
+                        История Elegant Deluxe началась еще в 60е годы. Тогда моя бабушка работала в отделе тканей универмага в городе Черновцы. Вдохновленная своей работой и каждый день помогая женщинам становиться еще красивее, она передала свои знания и умения дочери Марии, моей маме, которая сейчас является главным байером компании.
+                    </p>
+    
+                    <p class="about__description-text">
+                        А вот родилось наше семейное дело уже по инициативе моего отца Григория в 1995 году. И был это совсем небольшой магазинчик, площадь которого была всего лишь 5 квадратных метров! И кто бы мог тогда представить, что пройдет время и из него вырастет лидер на украинском рынке изысканных тканей!
+                    </p>
+                    
+                    <p class="about__description-text">
+                        Мы преданны делу много лет и нами движет желание дарить нашим клиентам красоту, блеск и уникальность! Весь наш опыт мы с радостью и гордостью передаем новым сотрудникам магазина, который открыл для Вас двери в сердце Киева!!!
+                    </p>
+                </div>
             </div>
-            <div class="about__description">
-                <p class="about__description-text">
-                    История Elegant Deluxe началась еще в 60е годы. Тогда моя бабушка работала в отделе тканей универмага в городе Черновцы. Вдохновленная своей работой и каждый день помогая женщинам становиться еще красивее, она передала свои знания и умения дочери Марии, моей маме, которая сейчас является главным байером компании.
-                </p>
-
-                <p class="about__description-text">
-                    А вот родилось наше семейное дело уже по инициативе моего отца Григория в 1995 году. И был это совсем небольшой магазинчик, площадь которого была всего лишь 5 квадратных метров! И кто бы мог тогда представить, что пройдет время и из него вырастет лидер на украинском рынке изысканных тканей!
-                </p>
-                
-                <p class="about__description-text">
-                    Мы преданны делу много лет и нами движет желание дарить нашим клиентам красоту, блеск и уникальность! Весь наш опыт мы с радостью и гордостью передаем новым сотрудникам магазина, который открыл для Вас двери в сердце Киева!!!
-                </p>
-            </div>
+            
         </div>
     </section>
 
@@ -531,7 +540,7 @@
                         <p class="hours-title">
                             График работы:
                         </p>
-                        <p class="hours-description"><span>пн-птн</span>  — 10:00-19:00 <span>сб</span> — 11:00-16:00</p>
+                        <p class="hours-description"><span>пн-птн</span>  — <b>10:00-19:00</b>  <span>сб</span> — <b>11:00-16:00</b> </p>
                     </div>
                 </div>
                 
