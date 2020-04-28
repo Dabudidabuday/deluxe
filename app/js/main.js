@@ -1,8 +1,102 @@
-$('.team__members-list').flickity({
+var $teamSlider = $('.team__members-list').flickity({
     cellAlign: 'left',
+    prevNextButtons: false,
     contain: true,
-    pageDots: false
+    pageDots: false,
+    wrapAround: true,
+    autoPlay: 3200,
+    wrapAround: true,
+    selectedAttraction: 0.05,
+    friction: 0.8
   });
+
+  $('.previous').on( 'click', function() {
+    $teamSlider.flickity('previous');
+  });
+  $('.next').on( 'click', function() {
+    $teamSlider.flickity('next');
+  });
+
+
+
+  // SHOW MORE PRODUCTS
+
+  var areCardsShown = false;
+$(".products__more").on("click", function() {
+  if (areCardsShown) {
+    // Hide cards
+    $(".card.card-toggle").removeClass("show");
+    $(this).text("Show More");
+  } else {
+    // Show cards
+    $(".card.card-toggle").addClass("show");
+    $(this).text("Show Less");
+  }
+  
+  areCardsShown = !areCardsShown;
+});
+
+
+
+// FILTERING PRODUCTS
+
+
+  $('.grid').isotope({
+    // options
+    itemSelector: '.grid-item',
+    stagger: 30,
+    transitionDuration: '0.6s',
+    initLayout: false
+  });
+
+
+// init Isotope
+var $grid = $('.grid').isotope({
+  // options
+});
+// filter items on button click
+$('.filter-button-group').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+
+
+
+
+
+$('.button-group > .filter-button').click(function () {
+  $('.button-group > .filter-button').removeClass('active');
+  $(this).addClass('active');
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // $(document).ready(function()
