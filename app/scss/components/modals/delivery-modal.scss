@@ -1,0 +1,40 @@
+.delivery-modal {
+    margin: 0 auto;
+    position: relative;
+    max-width: 56.822vmax;
+    padding: 2.916vw;
+    background-color: #000;
+    max-height: 100vh;
+    overflow-y: auto;
+
+    .modal__title {
+        margin-bottom: 1.458vmax;
+        font-size: 1.770vmax;
+        font-weight: bold;
+    }
+
+    .modal__subtitle {
+        margin-bottom: 1.770vmax;
+        font-size: 1.145vmax;
+        line-height: 1.354vmax;
+        font-weight: 500;
+    }
+
+    .modal__description {
+        font-size: 1.145vmax;
+        line-height: 1.354vmax;
+        font-weight: normal;
+    }
+
+    .modal__chapter {
+        font-size: 1.145vmax;
+        line-height: 1.354vmax;
+        color: $red;
+    }
+}
+
+.delivery-close {
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+}

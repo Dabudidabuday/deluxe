@@ -1,10 +1,36 @@
+// ANCHOR SCROLL
+
+
+$(document).ready(function () {
+  $("a[href*=#]").on("click", function (e) {
+      var anchor = $(this);
+      $('html, body').stop().animate({
+          scrollTop: $(anchor.attr('href')).offset().top -= 60
+      }, 500);
+      e.preventDefault();
+      return false;
+  });
+});
+
+
+// (function ($) {
+//   $(function () {
+
+//       $('#up').click(function () {
+//           $('html, body').animate({ scrollTop: 0 }, 500);
+//           return false;
+//       })
+
+//   })
+// })(jQuery)
+// TEAM SLIDER
+
 var $teamSlider = $('.team__members-list').flickity({
     cellAlign: 'left',
     prevNextButtons: false,
     contain: true,
     pageDots: false,
     wrapAround: true,
-    autoPlay: 3200,
     wrapAround: true,
     selectedAttraction: 0.05,
     friction: 0.8
@@ -21,20 +47,20 @@ var $teamSlider = $('.team__members-list').flickity({
 
   // SHOW MORE PRODUCTS
 
-  var areCardsShown = false;
-$(".products__more").on("click", function() {
-  if (areCardsShown) {
-    // Hide cards
-    $(".card.card-toggle").removeClass("show");
-    $(this).text("Show More");
-  } else {
-    // Show cards
-    $(".card.card-toggle").addClass("show");
-    $(this).text("Show Less");
-  }
+//   var areCardsShown = false;
+// $(".products__more").on("click", function() {
+//   if (areCardsShown) {
+//     // Hide cards
+//     $(".card.card-toggle").removeClass("show");
+//     $(this).text("Show More");
+//   } else {
+//     // Show cards
+//     $(".card.card-toggle").addClass("show");
+//     $(this).text("Show Less");
+//   }
   
-  areCardsShown = !areCardsShown;
-});
+//   areCardsShown = !areCardsShown;
+// });
 
 
 
@@ -75,11 +101,16 @@ $('.button-group > .filter-button').click(function () {
 
 
 
+// ---------MODALS------
+let overlay = document.getElementById('overlay');
 
+let deliveryClose = document.querySelector('.delivery-close');
 
+let deliveryModal = document.querySelector('.delivery-modal');
 
-
-
+// deliveryClose.addEventListener('click', function() {
+//   deliveryModal.style.
+// })
 
 
 

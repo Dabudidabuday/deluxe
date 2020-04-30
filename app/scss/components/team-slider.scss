@@ -31,8 +31,11 @@
     }
 
     .flickity-button:active svg circle {
-        stroke: #E33236;
-        box-shadow: inset 3px 2px 3px 3px rgba(0, 0, 0, 0.5);
+        fill: $red;
+    }
+
+    .flickity-button:active svg path {
+        stroke: #fff;
     }
 
     .previous {

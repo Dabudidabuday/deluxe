@@ -12,22 +12,32 @@
 .intro__description {
     padding-top: 19.375vh;
     margin-bottom: auto;
+
+    
 }
 
-.intro__description svg {
-    margin-bottom: 1.770vh;
+.intro__description img {
+    margin-bottom: 3.229vmax;
     width: 25.989vmax;
     height: 7.5vmax;
 }
 
-.intro__btn {
-    margin-bottom: 5.052vmax;
+.intro__center {
+    margin-bottom: 3.177vmax;
+
+    .intro__line {
+        margin-right: 1.614vmax;
+        width: 12.187vmax;
+        height: 0.416vmax;
+        border-radius: 0.520vmax;
+        background-color: $red;
+    }
 }
 
 .intro__description-text {
     max-width: 31.770vw;
     font-size: 0.833vmax;
-    line-height: 1.179vmax;
+    line-height: 1.145vmax;
     font-weight: normal;
 }
 

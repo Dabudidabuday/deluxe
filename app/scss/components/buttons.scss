@@ -20,6 +20,13 @@
     padding: 1.354vmax 1.770vmax;
 }
 
+.btn--ghost {
+    font-size: 2.187vmax;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
 .btn--little:hover,
 .btn--bigger:hover,
 .btn--big:hover {
