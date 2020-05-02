@@ -12,13 +12,19 @@ function compileStyles() {
     .pipe(dest("dist/"));
 }
 
+// function compileJs () {
+//   return src([
+//     'app/js/main.js',
+//   ])
+//     .pipe(gulpConcat('main.js'))
+//     .pipe(dest('dist/'))
+//   ;
+// }
+
 function compileJs () {
-  return src([
-    'app/js/*.js',
-  ])
+  return src('app/js/*.js')
     .pipe(gulpConcat('main.js'))
-    .pipe(dest('dist/'))
-  ;
+    .pipe(dest('dist/'));
 }
 
 function startBrowserSync() {

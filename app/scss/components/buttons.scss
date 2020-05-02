@@ -27,6 +27,11 @@
     background-color: transparent;
 }
 
+.btn--transparent {
+    background-color: transparent;
+    border: 0.052vmax solid #4A4A4A;
+}
+
 .btn--little:hover,
 .btn--bigger:hover,
 .btn--big:hover {
@@ -37,14 +42,6 @@
 .btn--bigger:active,
 .btn--big:active {
     background-color: #A71C1C;
-}
-
-
-
-
-.btn--transparent {
-    background-color: transparent;
-    border: 0.052vmax solid #4A4A4A;
 }
 
 .filter-button {

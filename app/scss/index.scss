@@ -29,6 +29,9 @@
 
 @import 'sections/footer.scss';
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -39,6 +42,7 @@ body {
 }
 
 #overlay {
+    display: none;
     position: fixed;
     top: 0;
     right: 0;

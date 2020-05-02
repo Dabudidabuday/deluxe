@@ -4,10 +4,10 @@
 }
 
 .delivery__title {
+    position: relative;
     margin-bottom: 1.770vmax;
     display: inline-block;
     font-size: 2.187vmax;
-    position: relative;
 
     .tooltip {
         position: absolute;
@@ -58,9 +58,9 @@
 .delivery__consultation-text {
     position: relative;
     margin-right: 2.343vmax;
-    text-align: right;
     max-width: 31.770vmax;
     width: 100%;
+    text-align: right;
 
     &::after {
         position: absolute;

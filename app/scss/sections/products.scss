@@ -40,6 +40,8 @@
 }
 
 .products-list {
+    margin-right: -30px;
+
     .card {
         cursor: pointer;
     }
@@ -47,15 +49,17 @@
 
 .card {
     margin-bottom: 1.718vmax;
-    max-width: 19.895vw;
+    // max-width: 19.895vw;
+    max-width: calc(25% - 30px);
     width: 100%;
+    // flex-basis: 25%;
     height: auto;
 
     .card-img  {
         border-radius: 0.208vmax;
 
          img {
-            width: 19.895vw;
+            width: 19.895vmax;
             border-radius: 0.208vmax;
         }
         
@@ -85,17 +89,11 @@
     }
 }
 
-.card.card-toggle {
-    display: none;
-}
-  
-.card.card-toggle.show {
-    display: block;
-}
-
-
 .products__more {
     display: block;
     margin: 1.845vmax auto 0;
 }
 
+.visible_item {
+    display:none;
+}
