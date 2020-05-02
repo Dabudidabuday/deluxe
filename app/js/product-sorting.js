@@ -5,7 +5,7 @@ $('.button-group > .filter-button').click(function () {
 })
 
 
-var initial_items = 8;
+var initial_items = 12;
 var next_items = 8;
 
 // INITIAL ISOTOPE
@@ -73,11 +73,12 @@ function showNextItems(pagination) {
   }
   $grid.isotope('layout');
 }
+
 // function that hides items when page is loaded
 function hideItems(pagination) {
-  var itemsMax = $('.element-item').length;
+  var itemsMax = $('.card').length;
   var itemsCount = 0;
-  $('.element-item').each(function () {
+  $('.card').each(function () {
       if (itemsCount >= pagination) {
           $(this).addClass('visible_item');
       }
@@ -92,6 +93,7 @@ $('#showMore').on('click', function (e) {
   e.preventDefault();
   showNextItems(next_items);
 });
+
 hideItems(initial_items);
 
 

@@ -3,6 +3,7 @@
 */
 
 @import '../libraries/flickity/flickity.min.scss';
+@import '../libraries/animate/animate.min.css';
 
 /*
 *   Framework
@@ -42,12 +43,12 @@ body {
 }
 
 #overlay {
-    display: none;
     position: fixed;
     top: 0;
     right: 0;
-    left: 0;
-    bottom: 0;
+    height:100%;
+    width:100%;
     background-color: rgba(20, 20, 20, 0.8);
     z-index: 1000;
+    transform:scale(0);
 }

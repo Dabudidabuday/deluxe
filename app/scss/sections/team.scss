@@ -7,6 +7,46 @@
     background-size: cover;
     background-color: #fff;
 
+    
+    
+}
+
+.team,
+.about {
+    .card,
+    .card--photo {
+        position: relative;
+       max-width: 19.895vw;
+       width: 100%;
+        height: 25.416vmax;
+        
+    
+        .card-img img  {
+            & img {
+                width: 19.687vw;
+                height: 25.416vmax;
+                border-radius: 0.208vmax;
+            }
+        }
+    
+        .card-text {
+            position: absolute;
+            bottom: 1.770vmax;
+            left: 1.770vmax;
+    
+            .card-name {
+                margin-bottom: 0.312vh;
+                font-size: 1.354vmax;
+                line-height: 1.927vmax;
+                font-weight: bold;
+                color: #fff;
+            }
+    
+            .card-appointment {
+                color: $red;
+            }
+        }
+    }
 }
 
 .team-box {
@@ -56,9 +96,11 @@
 }
 
 
+
 .card {
     position: relative;
-    width: auto;
+   max-width: 19.895vw;
+   width: 100%;
     height: 25.416vmax;
     
 

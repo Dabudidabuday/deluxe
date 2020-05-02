@@ -8,7 +8,6 @@
 }
 
 .slider {
-    // height: 100vh;
     position: relative;
 
 
@@ -66,3 +65,28 @@
         }
     }
 }
+
+
+
+
+.rgbShiftSlider {
+    opacity: 0.85;
+    width: 31.770vmax;
+    height: 31.770vmax;
+    overflow: hidden;
+    /*transform-origin : 50vw 300vh;*/
+    transform-origin: 50% 50%;
+    border-radius: 50%;
+    
+
+    canvas {
+        position: absolute;
+        // left: 0;
+        // top: 0;
+        z-index: 0;
+        width: 31.770vmax;
+        height: 31.770vmax;
+        border-radius: 50%;
+    }
+}
+

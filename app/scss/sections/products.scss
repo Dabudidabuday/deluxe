@@ -43,16 +43,33 @@
     margin-right: -30px;
 
     .card {
+        position: relative;
         cursor: pointer;
+    }
+
+    .new::after {
+        content: 'новинка';
+        position: absolute;
+        top: 0.729vmax;
+        right: 0.729vmax;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4.791vmax;
+        height: 1.770vmax;
+        font-size: 0.833vmax;
+        line-height: 1.145vmax;
+        font-weight: bold;
+        color: #000;
+        background-color: #fff;
+        border-radius: 0.208vmax;
     }
 }
 
 .card {
     margin-bottom: 1.718vmax;
-    // max-width: 19.895vw;
     max-width: calc(25% - 30px);
     width: 100%;
-    // flex-basis: 25%;
     height: auto;
 
     .card-img  {
