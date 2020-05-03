@@ -44,4 +44,5 @@ function watcher() {
   watch("index.html").on("change", browserSync.reload);
 }
 
+exports.build = series(compileStyles, compileJs);
 exports.run = series(compileStyles, compileJs, watcher);

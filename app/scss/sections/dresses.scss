@@ -54,7 +54,7 @@
 
     .slider__controllers {
         position: absolute;
-        bottom: -1.041vmax;
+        bottom: -1.458vmax;
         left: 50%;
         display: flex;
         transform: translate(-50%, 0);
@@ -71,12 +71,16 @@
 
 .rgbShiftSlider {
     opacity: 0.85;
-    width: 31.770vmax;
-    height: 31.770vmax;
+    // width: 31.770vmax;
+    // height: 31.770vmax;
     overflow: hidden;
-    /*transform-origin : 50vw 300vh;*/
-    transform-origin: 50% 50%;
+    width: 610px;
+        height: 610px;
+    transform-origin : 50vw 300vh;
+    // transform-origin: 50% 50%;
     border-radius: 50%;
+    
+    
     
 
     canvas {
@@ -84,9 +88,18 @@
         // left: 0;
         // top: 0;
         z-index: 0;
-        width: 31.770vmax;
-        height: 31.770vmax;
+        width: 610px;
+        height: 610px;
         border-radius: 50%;
+
+        &:hover {
+            width: 610px;
+            height: 610px;
+        }
+    }
+
+    &:hover {
+        filter: none;
     }
 }
 
