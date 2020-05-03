@@ -41,24 +41,33 @@
     outline: none;
 }
 
+
+html.modal-active, body.modal-active {
+    overflow: hidden;
+  }
+
 #overlay .modal-background {
     display: block;
     background: rgba(0, 0, 0, 0.2);
   }
 
-#overlay.delivery-details {
+#overlay.delivery-details,
+.overlay.btn-order {
     transform: scaleY(0.01) scaleX(0);
     animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   }
-  #overlay.delivery-details .modal-background .delivery-modal {
+  #overlay.delivery-details .modal-background .delivery-modal,
+  .overlay.btn-order .modal-background .modal-order {
     transform: scale(0);
     animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   }
-  #overlay.delivery-details.out {
+  #overlay.delivery-details.out,
+  .overlay.btn-order.out {
     transform: scale(1);
     animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   }
-  #overlay.delivery-details.out .modal-background .delivery-modal {
+  #overlay.delivery-details.out .modal-background .delivery-modal,
+  .overlay.btn-order.out .modal-background .modal-order {
     animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   }
 

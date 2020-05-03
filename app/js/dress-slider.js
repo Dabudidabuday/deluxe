@@ -13,7 +13,7 @@ var rbgShiftSlider = new rbgShiftSlider({
     navElement: '.slider-control',
     slideImages: images,
     stageWidth: 610,
-    stageHeight: 540,
+    stageHeight: 610,
     
     displacementImage: 'http://hmongouachon.com/_demos/rgbShiftSlider/displace-circle.png',
     fullScreen: false,

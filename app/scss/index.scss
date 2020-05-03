@@ -1,9 +1,9 @@
 /*
 *   Libraries
 */
-
 @import '../libraries/flickity/flickity.min.scss';
 @import '../libraries/animate/animate.min.css';
+
 
 /*
 *   Framework
@@ -42,7 +42,8 @@ body {
     background-image:  url('../../assets/backgrounds/background-pattern.svg');
 }
 
-#overlay {
+#overlay,
+.overlay {
     position: fixed;
     top: 0;
     right: 0;
