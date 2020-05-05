@@ -4,6 +4,8 @@ const { src, watch, dest, series } = require("gulp");
 const sass = require("gulp-sass");
 const browserSync = require("browser-sync").create();
 const gulpConcat = require("gulp-concat");
+const imagemin = require('gulp-imagemin');
+
 
 function compileStyles() {
   return src("app/scss/index.scss")
@@ -12,14 +14,13 @@ function compileStyles() {
     .pipe(dest("dist/"));
 }
 
-// function compileJs () {
-//   return src([
-//     'app/js/main.js',
-//   ])
-//     .pipe(gulpConcat('main.js'))
-//     .pipe(dest('dist/'))
-//   ;
-// }
+function compressImg() {
+  return src('assets/*')
+    .pipe(imagemin({
+      progressive: true
+    }))
+    .pipe(dest('assets/'));
+}
 
 function compileJs () {
   return src('app/js/*.js')
@@ -44,5 +45,5 @@ function watcher() {
   watch("index.html").on("change", browserSync.reload);
 }
 
-exports.build = series(compileStyles, compileJs);
+exports.build = series(compileStyles, compileJs, compressImg);
 exports.run = series(compileStyles, compileJs, watcher);

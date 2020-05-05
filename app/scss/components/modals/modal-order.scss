@@ -1,0 +1,15 @@
+#product-request-modal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    .modal-order {
+        position: relative;
+        padding: 2.864vmax 5vmax;
+        display: block;
+        background-color: rgba(14, 14, 14, 0.9);
+        border-radius: 0.208vmax;
+        z-index: 1010;
+    }
+}
+

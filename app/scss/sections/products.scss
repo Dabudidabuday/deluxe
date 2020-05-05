@@ -77,7 +77,8 @@
         border-radius: 0.208vmax;
 
          img {
-            width: 19.895vmax;
+            max-width: 19.895vmax;
+            width: 100%;
             border-radius: 0.208vmax;
         }
         
@@ -106,6 +107,10 @@
             margin-right: 1.145vmax;
         }
     }
+
+    // @media screen and(max-width: 950px) {
+    //     max-width: calc(33% - 30px);
+    // }
 }
 
 .products__more {
