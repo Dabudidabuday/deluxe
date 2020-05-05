@@ -1,6 +1,6 @@
 .dresses {
-    @include paddingSectionsNarrow;
-    // height: 100vh;
+    padding-top: 7.5vmax;
+    padding-bottom: 7.5vmax;
     background-image:  url('../../../assets/backgrounds/dresses-background.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -71,11 +71,9 @@
 
 .rgbShiftSlider {
     opacity: 0.85;
-    // width: 31.770vmax;
-    // height: 31.770vmax;
+    width: 39.270vmax;
+    height: 39.270vmax;
     overflow: hidden;
-    width: 610px;
-        height: 610px;
     transform-origin : 50vw 300vh;
     // transform-origin: 50% 50%;
     border-radius: 50%;
@@ -88,13 +86,13 @@
         // left: 0;
         // top: 0;
         z-index: 0;
-        width: 610px;
-        height: 610px;
+        width: 39.270vmax;
+        height: 39.270vmax;
         border-radius: 50%;
 
         &:hover {
-            width: 610px;
-            height: 610px;
+            width: 39.270vmax;
+            height: 39.270vmax;
         }
     }
 

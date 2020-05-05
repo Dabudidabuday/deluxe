@@ -2,9 +2,15 @@
     @include paddingSectionsNarrow;
 
     .card-img {
+        position: relative;
+        max-width: 19.895vw;
+        width: 100%;
+        height: auto;
         border-radius: 0.208vmax;
 
         img {
+            width: 19.687vw;
+            height: auto;
             border-radius: 0.208vmax;
         }
     }

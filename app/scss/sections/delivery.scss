@@ -1,6 +1,9 @@
 .delivery {
     @include paddingSectionsNarrow;
     background-image: url('../../../assets/backgrounds/delivery-background-min.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
 }
 
 .delivery__title {
@@ -44,10 +47,14 @@
         justify-content: center;
         align-items: center;
         margin-right: 1.145vmax;
-        width: 6.979vw;
-        height: 6.979vw;
-        // background-color: #1B1B1B;
         border-radius: 0.208vmax;
+
+        img {
+            max-width: 6.979vw;
+            max-height: 6.979vw;
+            width: 100%;
+            height: auto;
+        }
     }
 
     .item-text {

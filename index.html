@@ -12,7 +12,7 @@
 </head>
 <body>
     
-    <div class="overlay">
+    <div class="overlay" id="product-request-modal">
         <div class="modal-background">
             <div class="modal-order">
                 <div class="container--narrow  flex flex__column flex__ai-center">
@@ -53,7 +53,7 @@
         </div>
     </div>
 
-    <div id="overlay">
+    <div id="delivery-modal">
         <div class="modal-background">
             <div class="delivery-modal">
                 <h3 class="modal__title">ЗАКАЗ, ОПЛАТА И ДОСТАВКА</h3>
@@ -184,8 +184,7 @@
 <main>
     <section class="intro" id="intro">
         <div class="container--narrow">
-            <div class="intro__description">
-
+            <div class="intro__description flex flex__column flex__jc-center">
                 <div class="intro__center">
                     <div class="intro__logo-img">
                         <img src="assets/logo/logo.svg" alt="">
@@ -327,7 +326,7 @@
                             <p class="card-article">Артикул:  АМ52340.008.02</p>
                         </div>
                         
-                        <button class="btn btn--little btn-order">заказать</button>
+                        <button class="btn btn--little btn-order" data-product-article="АМ52340.008.02">заказать</button>
                     </li>
 
                     <li class="card evening new">
@@ -348,7 +347,7 @@
                     </li>
 
                     <li class="card evening">
-                        <div class="card-img">
+                        <div class="card-img" data-gallery="assets/products/product-3.jpg, assets/products/product-4.jpg, assets/products/product-2.jpg" data-gallery-thumbnail="assets/products/product-3.jpg, assets/products/product-4.jpg, assets/products/product-2.jpg">
                             <img src="assets/products/product-3.jpg" alt="">
                         </div>
                         <div class="card__info-top flex flex__jc-between">

@@ -12,8 +12,8 @@ var rbgShiftSlider = new rbgShiftSlider({
     nav : true,
     navElement: '.slider-control',
     slideImages: images,
-    stageWidth: 610,
-    stageHeight: 610,
+    stageWidth: 754,
+    stageHeight: 754,
     
     displacementImage: 'http://hmongouachon.com/_demos/rgbShiftSlider/displace-circle.png',
     fullScreen: false,
@@ -24,5 +24,5 @@ var rbgShiftSlider = new rbgShiftSlider({
     mouseDispIntensity: 3,
     interactive : true,
     autoPlay : true,
-    autoPlaySpeed : 5000,
+    autoPlaySpeed : 6500,
 });
