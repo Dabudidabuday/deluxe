@@ -30,14 +30,7 @@
         }
     }
 
-    .flickity-button:active svg circle {
-        fill: $red;
-    }
-
-    .flickity-button:active svg path {
-        stroke: #fff;
-    }
-
+    
     .previous {
         left: 0;
     }
@@ -46,7 +39,17 @@
         left: 4.062vmax;
     }
 
-    .flickity-button:hover svg path {
-        stroke: #E33236;
-    }
+    
+}
+
+.flickity-button:active svg circle {
+    fill: $red;
+}
+
+.flickity-button:active svg path {
+    stroke: #fff;
+}
+
+.flickity-button:hover svg path {
+    stroke: #E33236;
 }

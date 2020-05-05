@@ -15,9 +15,13 @@
         position: absolute;
         top: -1vmax;
         right: -2.25vmax;
+        width: 1.770vmax;
+        height: 1.770vmax;
         cursor: pointer;
 
         & svg {
+            width: 1.770vmax;
+            height: 1.770vmax;
             transition: all .2s;
         }
         

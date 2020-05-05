@@ -10,7 +10,7 @@
 // instanciate slider
 var rbgShiftSlider = new rbgShiftSlider({
     nav : true,
-    navElement: '.slider-control',
+    navElement: '.flickity-button',
     slideImages: images,
     stageWidth: 754,
     stageHeight: 754,

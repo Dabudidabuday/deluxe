@@ -7,7 +7,6 @@ const btnOrder = $('.btn-order')
 
 btnOrder.click(function(){
     var buttonClass = $(this).attr('class');
-    $('.modal-order').removeClass('display-none');
     modalOrder.removeAttr('class').addClass(buttonClass);
     $('body').addClass('modal-active');
 })
