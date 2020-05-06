@@ -17,14 +17,15 @@ $('.card .btn-order').click(function(event){
     $('body').addClass('modal-active');
 })
 
-$(".modal-background").click(function() {
-    $('.overlay').addClass('out');
+$(".modal-background").click(function(event) {
+    event.stopPropagation();
+    $('#product-request-modal').addClass('out');
     $('body').removeClass('modal-active');
 });
 
-$('.modal-background').click(function(event){
-    event.stopPropagation();
-});
+// $('.modal-background').click(function(event){
+    
+// });
 
 
 

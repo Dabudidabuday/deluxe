@@ -15,7 +15,7 @@ var $grid = $('.products-list').isotope({
     transitionDuration: '0.6s',
     layoutMode: 'fitRows',
     fitRows: {
-      gutter: 30
+      gutter: '.gutter-sizer'
     }
 });
 
