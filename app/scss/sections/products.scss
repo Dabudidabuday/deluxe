@@ -11,16 +11,18 @@
 
 .products__subtitle {
     margin-bottom: 0.833vmax;
-    font-size: 1.145vmax;
+    max-width: 31.770vmax;
+    width: 100%;
+    font-size: 0.833vmax;
     line-height: 1.354vmax;
     font-weight: 500;
 }
 
 .products__description-text {
     margin-bottom: 2.812vmax;
-    max-width: 49.531vmax;
+    max-width: 31.770vmax;
     width: 100%;
-    font-size: 1.145vmax;
+    font-size: 0.833vmax;
     line-height: 1.354vmax;
     font-weight: normal;
 }

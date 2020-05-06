@@ -48,9 +48,13 @@
     padding: 0 0.729vmax;
     font-size: 1.145vmax;
     line-height: 1.770vmax;
-    font-weight: 500;
-    color: #7E8082;
+    font-weight: 400;
+    color: #9EA1A3;
     transform: translateY(1px);
+
+    &:hover {
+        color: #fff;
+    }
 
     &.active {
         color: #fff;
