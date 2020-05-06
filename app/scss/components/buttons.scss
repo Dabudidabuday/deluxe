@@ -21,10 +21,21 @@
 }
 
 .btn--ghost {
+    padding: 0.208vmax 1.354vmax 0.364vmax;
     font-size: 2.187vmax;
+    line-height: 2.916vmax;
     font-weight: bold;
-    text-transform: uppercase;
     background-color: transparent;
+    border: 1px solid transparent;
+    
+    &:hover {
+        border: 1px solid #4A4A4A;
+        border-radius: 0.208vmax;
+    }
+
+    &:active {
+        background-color: $red;
+    }
 }
 
 .btn--transparent {
