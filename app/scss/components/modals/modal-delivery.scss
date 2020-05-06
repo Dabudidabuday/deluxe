@@ -57,26 +57,6 @@ html.modal-active, body.modal-active {
     background: rgba(0, 0, 0, 0.2);
   }
 
-// #delivery-modal.delivery-details,
-// .overlay#btn-order {
-//     transform: scaleY(0.01) scaleX(0);
-//     animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-//   }
-//   #delivery-modal.delivery-details .modal-background .delivery-modal,
-//   .overlay#btn-order .modal-background .modal-order {
-//     transform: scale(0);
-//     animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-//   }
-//   #delivery-modal.delivery-details.out,
-//   .overlay#btn-order.out {
-//     transform: scale(1);
-//     animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-//   }
-//   #delivery-modal.delivery-details.out .modal-background .delivery-modal,
-//   .overlay#btn-order.out .modal-background .modal-order {
-//     animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-//   }
-
 
 #delivery-modal {
     &.delivery-details {
@@ -100,30 +80,6 @@ html.modal-active, body.modal-active {
                 }
         }
     }
-}
-
-#product-request-modal {
-    &.in {
-      transform:scaleY(.01) scaleX(0);
-      animation:unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-
-      .modal-background {
-          .modal-order {
-              transform:scale(0);
-              animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-          }
-      }
-
-      &.out {
-        transform:scale(1);
-        animation:unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-            .modal-background {
-                .modal-order {
-                  animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-                }
-            }
-    }
-  }
 }
 
 

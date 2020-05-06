@@ -14,21 +14,29 @@ $('#delivery-modal').click(function(){
 $('.card .btn-order').click(function(event){
     event.stopPropagation();
     $('#product-request-modal').removeAttr('class').addClass('in');
-    $('body').addClass('modal-active');
+    $('#product-request-modal').addClass('modal-active');
 })
 
-$(".modal-background").click(function(event) {
+$("#product-request-modal").click(function(event) {
     event.stopPropagation();
     $('#product-request-modal').addClass('out');
-    $('body').removeClass('modal-active');
+    $('#product-request-modal').removeClass('modal-active');
 });
 
-// $('.modal-background').click(function(event){
-    
+// $('*:not(#product-request-modal)').click(function(e){
+//     e.preventDefault();
 // });
 
+$('.modal-background').click(function(event){
+    event.stopPropagation();
+});
 
 
+jQuery(document).on('click',function (e) {
+    var el = '.element';
+    if (jQuery(e.target).closest(el).length) return;
+    // дальше пишем код который нужно выполнить по клику вне элемента
+   });
 
 
 
