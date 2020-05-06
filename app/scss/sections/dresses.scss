@@ -59,11 +59,15 @@
         display: flex;
         transform: translate(-50%, 0);
         
+        .left {
+            margin: 0 1.718vmax 0 0;
+        }
+
         .left,
         .right {
             width: 3.020vmax;
             height: 3.020vmax;
-            margin: 0 11px;
+            
         }
     }
 }
