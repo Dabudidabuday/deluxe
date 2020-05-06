@@ -54,6 +54,11 @@
 
     &:hover {
         color: #fff;
+        background-color: rgba(24, 24, 24, 0.62);
+    }
+
+    &:active {
+        background-color: rgba(216, 67, 70, 0.62);
     }
 
     &.active {
