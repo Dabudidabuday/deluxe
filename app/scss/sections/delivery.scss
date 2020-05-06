@@ -49,14 +49,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 7.5vmax;
+        height: 7.5vmax;
         margin-right: 1.145vmax;
         border-radius: 0.208vmax;
 
         img {
-            max-width: 6.979vw;
-            max-height: 6.979vw;
+            max-width: 4.379vw;
+            // max-height: 6.979vw;
             width: 100%;
-            height: auto;
         }
     }
 
