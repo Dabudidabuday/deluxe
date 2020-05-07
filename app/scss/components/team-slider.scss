@@ -43,13 +43,13 @@
 }
 
 .flickity-button:active svg circle {
-    fill: $red;
+    stroke: $red;
 }
 
 .flickity-button:active svg path {
     stroke: #E33236;
 }
 
-// .flickity-button:hover svg path {
-//     stroke: #E33236;
-// }
+.flickity-button:hover svg path {
+    stroke: #E33236;
+}
